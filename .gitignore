@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Corpus images are not versioned (large / licensing); manifest + README are.
+experiments/corpus/**
+!experiments/corpus/
+!experiments/corpus/README.md
+!experiments/corpus/manifest.csv
+
+# Encoded outputs kept with --keep-outputs
+experiments/results/*/out/
+
+# Source PDFs (licensing / size)
+Technical-Research/02_PAPERS/ORIGINAL_PDFS/*.pdf
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/

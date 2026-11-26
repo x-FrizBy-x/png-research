@@ -1,0 +1,4 @@
+pillow>=11
+numpy>=2
+pypng>=0.20220715
+pyoxipng>=9.1
