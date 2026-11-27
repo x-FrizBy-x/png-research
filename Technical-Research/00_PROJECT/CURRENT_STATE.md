@@ -10,11 +10,9 @@ depth); smoke runs E000 (pyref/Pillow) and E001 (+ oxipng via pyoxipng 9.1.1); a
 **Best known result:** none yet (E000 is a harness check, not evidence).
 
 **Blockers / needs the user:**
-- Q001: choose the optimisation target (charter A/B/C).
 - External CLI baselines are not installed (zopflipng, ECT, optipng); oxipng is available via pyoxipng.
 - A real corpus is needed (see `experiments/corpus/README.md`).
 
 **Next 3 actions:**
-1. Decide Q001 and finish PROJECT_CHARTER success metrics.
-2. Build the real corpus, run `E002_baseline` with all baselines.
-3. Register the first sources: PNG spec, RFC 1950/1951, zopfli design notes.
+1. Build the real corpus, run `E002_baseline` with all baselines.
+2. Register the first sources: PNG spec, RFC 1950/1951, zopfli design notes.

@@ -24,24 +24,7 @@ fpng, libdeflate. Non-PNG formats (QOI, WebP-lossless, JPEG XL lossless) only as
 comparison points, never as the goal.
 
 ## Repository layout
-```
-Technical-Research/
-  00_PROJECT/      PROJECT_CHARTER (goals, scope, success metrics), RESEARCH_PROTOCOL
-                   (rules below, in detail), CURRENT_STATE (read first every session), GLOSSARY
-  01_KNOWLEDGE/    MASTER_KNOWLEDGE (synthesised understanding), CLAIM_REGISTER (atomic,
-                   sourced claims), TECHNICAL_CONCEPTS, OPEN_QUESTIONS
-  02_PAPERS/       PAPER_REGISTER (index), PAPER_NOTES/Pxxx.md, ORIGINAL_PDFS/
-  03_ANALYSIS/     TECHNICAL_ANALYSIS, COMPARISON_TABLES, CONTRADICTIONS
-  04_DECISIONS/    DECISION_LOG
-  05_SESSIONS/     SESSION_xxx.md, one per working session
-  06_OUTPUT/       DRAFTS/, FINAL/
-  07_AUDIT/        CHANGELOG, VERIFICATION_LOG
-experiments/
-  harness/         pngio (canonical decode + verify), encoders (registry), corpus, bench
-  encoders/        our encoder prototypes; pyref.py = reference encoder (numpy filters + zlib)
-  corpus/          <category>/**.png (git-ignored) + manifest.csv (versioned, sha256)
-  results/         E0NN_<name>/ results.csv, env.json, summary.md (immutable)
-```
+Research notes live in `Technical-Research/`; experiments in `experiments/`.
 See `experiments/README.md` for commands. Run them from `experiments/` with
 `../.venv/Scripts/python -m harness.<bench|corpus> ...`.
 

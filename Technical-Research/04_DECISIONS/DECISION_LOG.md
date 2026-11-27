@@ -8,3 +8,4 @@
 | D004 | 2026-11-26 | Experiment result folders are immutable; re-runs get new E-IDs | traceable evidence for claims | overwrite in place |
 | D005 | 2026-11-26 | Reference encoder `pyref` keeps the source colour type and bit depth and writes no metadata | changes one variable at a time; reductions get their own experiments later | reduce by default |
 | D006 | 2026-11-26 | Run oxipng through the `pyoxipng` PyPI bindings (in-process, timing scope `recode`) instead of the cargo-installed CLI | installs into .venv via requirements.txt, no system-wide install, no process-start overhead in timings | `cargo install oxipng` (global, built from source) |
+| D007 | 2026-11-26 | Optimisation target: any Pareto improvement (size vs encode time) in any regime, overall or per category | user wants optimisation of any kind; Pareto keeps size-only and speed-only wins comparable | a single fixed target A/B/C |
